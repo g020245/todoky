@@ -1,0 +1,16 @@
+* Working on right now:
+
+
+TODO:
+* design directory structure
+* design file structure
+* create a config file
+
+Features i want.
+* PDF export
+* multilingual
+* GUI support
+
+
+
+
