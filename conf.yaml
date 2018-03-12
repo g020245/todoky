@@ -1,0 +1,42 @@
+#navigating copa +
+#pa = paths
+
+
+maintenanceMode: 0
+# User info
+user:
+  name: Gunnar
+  lastname: Rudovics
+  email: asd@asd.com
+  inicial: GR
+  birth_year: 1989
+
+
+#This is a day splitter in input file.
+dataRegex: ''
+multilineSeparator: ':'
+
+##copapa
+paths:
+# I dont know yet why this config is needed.
+  programDirectory: ''
+# Path to directory. This will contain all the input used by script. It will contain only text files.
+  mainInputPath: ''
+
+#Logs. There will be 2 types of logs. User friendly log and technical logs
+  logFilesPath: ''
+    userFriendlyLogs: ''
+    miscLogs: ''
+
+# Of course: backups
+# This backup all the raw input before processeing. As soon as program detects input. Appends to one or more files.
+  rawInputBackup:
+    path1: ''
+    path2: ''
+
+  # as soon as output  or export is generated, take a fresh backup
+  outputBackup:
+    path: ''
+
+
+
