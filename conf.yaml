@@ -29,7 +29,7 @@ paths:
     miscLogs: ''
 
 # Of course: backups
-# This backup all the raw input before processeing. As soon as program detects input. Appends to one or more files.
+# This backup is all the raw input before processeing. As soon as program detects input. Appends to one or more files.
   rawInputBackup:
     path1: ''
     path2: ''
@@ -37,6 +37,23 @@ paths:
   # as soon as output  or export is generated, take a fresh backup
   outputBackup:
     path: ''
+  #Path where config file backup will be
+  configFileBackup:
+    path: ''
 
+  #where does output goes
+  output:
+    export1:
+      exportName: ''
+      exportDescription: ''
+      exportCategories: 'array'
+      paths: 'array'
 
+    export2:
+      exportName: ''
+      exportDescription: ''
+      exportCategories: 'array'
+      paths: 'array'
+
+# END of paths ---------------------------------------------------------------------------
 
