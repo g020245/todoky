@@ -1,6 +1,6 @@
-#navigating copa +
-#pa = paths
-
+# navigating copa +
+# pa = paths
+# de = delimiters
 
 maintenanceMode: 0
 # User info
@@ -57,3 +57,9 @@ paths:
 
 # END of paths ---------------------------------------------------------------------------
 
+
+
+
+##copade
+#Delimiters in text files
+searchPrefix: 'zz'
