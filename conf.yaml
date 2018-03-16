@@ -1,6 +1,7 @@
 # navigating copa +
 # pa = paths
 # de = delimiters
+# co = commands
 
 maintenanceMode: 0
 # User info
@@ -71,3 +72,19 @@ commentSection: 'dd'
 dateSeparator: ''
 
 # END of delimiters ----------------------------------------------------------------------
+
+
+
+
+##copaco - Commands
+
+#commands enabled. It will search for commands
+commandsEnabled: 1
+
+#commands starts with
+commands:
+  deleteEntries:
+    name: ''
+    description: ''
+    arguments: ''
+
