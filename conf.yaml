@@ -20,9 +20,9 @@ multilineSeparator: ':'
 ##copapa
 paths:
 # I dont know yet why this config is needed.
-  programDirectory: ''
+  programDirectory: 'C:\Users\gunnar\Documents\github\todoky'
 # Path to directory. This will contain all the input used by script. It will contain only text files.
-  mainInputPath: ''
+  mainInputPath: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\input'
 
 #Logs. There will be 2 types of logs. User friendly log and technical logs
   logFilesPath: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\logs'
@@ -32,15 +32,15 @@ paths:
 # Of course: backups
 # This backup is all the raw input before processeing. As soon as program detects input. Appends to one or more files.
   rawInputBackup:
-    path1: ''
+    path1: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\backup'
     path2: ''
 
   # as soon as output  or export is generated, take a fresh backup
   outputBackup:
-    path: ''
+    path: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\backup'
   #Path where config file backup will be
   configFileBackup:
-    path: ''
+    path: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\backup'
 
   #where does output goes
   output:
@@ -48,7 +48,7 @@ paths:
       exportName: ''
       exportDescription: ''
       exportCategories: 'array'
-      paths: 'array'
+      paths: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\output'
 
     export2:
       exportName: ''
