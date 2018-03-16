@@ -25,9 +25,9 @@ paths:
   mainInputPath: ''
 
 #Logs. There will be 2 types of logs. User friendly log and technical logs
-  logFilesPath: ''
-    userFriendlyLogs: ''
-    miscLogs: ''
+  logFilesPath: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\logs'
+    userFriendlyLogs: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\logs\friendlyLogs.txt'
+    miscLogs: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\logs\techLogs.txt'
 
 # Of course: backups
 # This backup is all the raw input before processeing. As soon as program detects input. Appends to one or more files.
