@@ -60,6 +60,14 @@ paths:
 
 
 
-##copade
+##copade - Delimiters
 #Delimiters in text files
-searchPrefix: 'zz'
+searchPrefix: 'uu'
+
+#comment section separator
+commentSection: 'dd'
+
+#date regex
+dateSeparator: ''
+
+# END of delimiters ----------------------------------------------------------------------
