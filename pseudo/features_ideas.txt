@@ -6,3 +6,4 @@ File where crawing are...
 * export all settings
 * nice active category export
 * category archiving
+* default config file
