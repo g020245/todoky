@@ -4,17 +4,30 @@ class Category(object):
     def __init__(self):
         pass
     
-    def getCategoriesSection(self):
+    def getCategoriesSection(self)->list:
         # todo test
         # todo ref
-        # todo doc
+        """
+        Returns categories collection from config file.
+
+        :return:
+        """
         return cfg.getValue('categories')
     
-    def printShortCategoryDescription(self):
+    def printShortCategoryDescription(self)->None:
         # todo test
         # todo ref
-        # todo doc
-        
+        """
+        Print a nice table of categories in config file.
+
+Short   Word           Description
+11      private        This is a private category
+pp      work           Work category
+te      telefoni       Work phones
+
+        :return:
+        """
+
         tmp = []
         for i in self.getCategoriesSection():
             for k, v in i.items():
@@ -33,7 +46,9 @@ class Category(object):
         
     
 cat = Category()
+
+
+print(f"{cat.getCategoriesSection()}")
+
 cat.printShortCategoryDescription()
-
-
 

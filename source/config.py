@@ -14,7 +14,11 @@ class ConfigGetter:
     def getValue(self, findWhat):
         # todo test
         # todo ref
-        # todo doc
+        """
+        Returns a value or collection from config file
+        :param findWhat:
+        :return:
+        """
         return nested(findWhat, self.getYamlStream())
 
 
