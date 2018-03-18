@@ -92,3 +92,24 @@ commands:
     description: ''
     arguments: ''
 
+# END of commands----------------------------------------------------------------------
+
+
+#copaca
+
+categories:
+  private:
+    short: '11'
+    description: 'This is a private category'
+    mode: ''
+    reserved: ''
+  work:
+    short: 'pp'
+    description: 'Work category'
+    mode: ''
+    reserved: ''
+  telefoni:
+    short: 'te'
+    description: 'Work category'
+    mode: ''
+    reserved: ''
