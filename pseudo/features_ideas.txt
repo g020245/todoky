@@ -4,6 +4,12 @@ File where crawing are...
 * smooth install
 * nice GUI
 * export all settings
-* nice active category export
 * category archiving
 * default config file
+
+
+
+Done
+[x] * nice active category export (printShortCategoryDescription)
+
+

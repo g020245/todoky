@@ -20,10 +20,10 @@ class Category(object):
         """
         Print a nice table of categories in config file.
 
-Short   Word           Description
-11      private        This is a private category
-pp      work           Work category
-te      telefoni       Work phones
+        Short   Word           Description
+        11      private        This is a private category
+        pp      work           Work category
+        te      telefoni       Work phones
 
         :return:
         """
@@ -41,6 +41,7 @@ te      telefoni       Work phones
         for i in tmp:
             print(f"{str(i['short']).ljust(8, ' ')}{str(i['category']).ljust(15, ' ')}{str(i['description']).ljust(50, ' ')} ")
 
+    
 
                 
         
@@ -48,7 +49,6 @@ te      telefoni       Work phones
 cat = Category()
 
 
-print(f"{cat.getCategoriesSection()}")
 
-cat.printShortCategoryDescription()
+
 
