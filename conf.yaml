@@ -53,8 +53,10 @@ paths:
     export2:
       exportName: ''
       exportDescription: ''
-      exportCategories: 'array'
-      paths: 'array'
+      exportCategories: array('')
+      paths:
+        - 'path 1'
+        - 'path 2'
 
 # END of paths ---------------------------------------------------------------------------
 
