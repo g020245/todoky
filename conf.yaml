@@ -1,4 +1,4 @@
-# navigating copa +
+﻿# navigating copa +
 # pa = paths
 # de = delimiters
 # co = commands
@@ -21,11 +21,13 @@ multilineSeparator: ':'
 paths:
 # I dont know yet why this config is needed.
   programDirectory: 'C:\Users\gunnar\Documents\github\todoky'
+
 # Path to directory. This will contain all the input used by script. It will contain only text files.
   mainInputPath: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\input'
 
 #Logs. There will be 2 types of logs. User friendly log and technical logs
-  logFilesPath: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\logs'
+  logFiles:
+    logFilesDirectory: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\logs'
     userFriendlyLogs: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\logs\friendlyLogs.txt'
     miscLogs: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\logs\techLogs.txt'
 
