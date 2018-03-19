@@ -6,7 +6,7 @@ File where crawing are...
 * export all settings
 * category archiving
 * default config file
-
+* Logging
 
 
 Done

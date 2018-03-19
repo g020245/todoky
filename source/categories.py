@@ -1,8 +1,14 @@
 from source.config import cfg
+
+
 class Category(object):
 
-    def __init__(self):
-        pass
+    def __init__(self, configClass = ''):
+        # todo test
+        # todo ref
+        # todo doc
+        # add config class. Decouple
+        self.activeCategories =''
     
     def getCategoriesSection(self)->list:
         # todo test
