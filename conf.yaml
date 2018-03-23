@@ -6,11 +6,11 @@
 maintenanceMode: 0
 # User info
 user:
-  name: Gunnar
-  lastname: Rudovics
+  name:
+  lastname:
   email: asd@asd.com
   inicial: GR
-  birth_year: 1989
+  birth_year: 1970
 
 
 #This is a day splitter in input file.
@@ -23,7 +23,7 @@ paths:
   programDirectory: 'C:\Users\gunnar\Documents\github\todoky'
 
 # Path to directory. This will contain all the input used by script. It will contain only text files.
-  mainInputPath: 'C:\Users\gunnar\Documents\github\todoky\testIOFolders\input'
+  mainInputPath: 'C:\Users\gunnar\Documents\github\todoky\folderTest\input'
 
 #Logs. There will be 2 types of logs. User friendly log and technical logs
   logFiles:

@@ -1,14 +1,14 @@
-from source.config import cfg
+from source.config import config
 
 
-class Category(object):
+class CategoriesInConfig(object):
 
-    def __init__(self, configClass = ''):
+    def __init__(self, config):
         # todo test
         # todo ref
         # todo doc
         # add config class. Decouple
-        self.activeCategories =''
+        self.config = config
     
     def getCategoriesSection(self)->list:
         # todo test
@@ -18,8 +18,20 @@ class Category(object):
 
         :return:
         """
-        return cfg.getValue('categories')
-    
+        return self.config.getValue('categories')
+
+    def getActiveCategoryListFromConfig(self)->list:
+        # todo test
+        # todo ref
+        # todo doc
+
+        shortCategoryList: list = []
+        for i in self.getCategoriesSection():
+            for k,v in i.items():
+                shortCategoryList.append(str(v['short']))
+
+        return shortCategoryList
+
     def printShortCategoryDescription(self)->None:
         # todo test
         # todo ref
@@ -47,12 +59,21 @@ class Category(object):
         for i in tmp:
             print(f"{str(i['short']).ljust(8, ' ')}{str(i['category']).ljust(15, ' ')}{str(i['description']).ljust(50, ' ')} ")
 
+class CategoryCreation(object):
+
+    def __init__(self):
+        pass
+
     
+configCategories = CategoriesInConfig(config)
+aa = configCategories.getActiveCategoryListFromConfig()
+
+
 
                 
         
     
-cat = Category()
+
 
 
 

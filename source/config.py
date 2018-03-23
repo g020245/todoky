@@ -1,33 +1,37 @@
 from source.YamlStream import getYamlStream
 from nested_lookup import nested_lookup as nested
-from source.custom_logger import logme
+# from source.custom_logger import logme
 
 class ConfigGetter:
     # todo refactor
     # todo check if category or setting exists
 
     def __init__(self, dataStream: dict):
-        logme(f"Inicializing ConfigGetter... {self.__str__()} ")
         self.yamlData = dataStream
 
     def getYamlStream(self):
         return self.yamlData
 
-    def getValue(self, findWhat):
+    def getValue(self, findWhat:str, subSetting:str='')->list:
         # todo test
         # todo ref
+        # todo doc
         """
-        Returns a value or collection from config file
+        Get value from config file.
+        Find what returns a list with one item o subcategories in searched config entry.
+         If subsetting is provided then it returns that subsetting.
         :param findWhat:
         :return:
         """
-        logme(f"Trying to get config value for parameter: {findWhat} at {self.__repr__()}")
-        return nested(findWhat, self.getYamlStream())
+        resultFromYaml: list = nested(findWhat, self.getYamlStream())
+
+        if subSetting:
+            return nested(subSetting, resultFromYaml)
+        else:
+            return resultFromYaml
 
 
-
-cfg = ConfigGetter(getYamlStream())
-
+config = ConfigGetter(getYamlStream())
 
 
 

@@ -1,5 +1,5 @@
 import pytest
-from source.categories import Category
+from source.categories import configCategories
 
 @pytest.fixture()
 def getcat():
@@ -7,7 +7,7 @@ def getcat():
     This initiates category class
     :return:
     """
-    return Category()
+    return configCategories
 
 
 def test_getCategoriesSectionGetsADictWithValues():
